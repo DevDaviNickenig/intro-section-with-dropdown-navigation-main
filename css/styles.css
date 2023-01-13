@@ -1,124 +1,3 @@
-/* .flex__basico {
-    display: flex;
-    flex-direction: column;
-    margin: 1em;
-}
-
-.flex__row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.menu .menu-faketrigger {
-    position: absolute;
-    z-index: 1000;
-    width: 35px;
-    height: 35px;    
-    opacity: 0;
-
-}
-
-.menu .menu-lines {
-    position: absolute;
-    z-index: 999;
-    width: 35px;
-    height: 35px;
-}
-
-.span {
-    display: block;
-    width: 35px;
-    height: 3px;
-    margin-bottom: 5px;
-    background-color: black;
-    border-radius: 3px;
-    transition: all ease .2s;    
-}
-
-.menu .menu-faketrigger:checked ~ ul {
-    margin-left: 0;
-}
-
-.menu .menu-faketrigger:checked ~ .menu-lines .span:nth-child(1) {
-    transform-origin: 0% 0%;
-    transform: rotate(45deg) scaleX(1);
-    background-color: red;
-}
-
-.menu .menu-faketrigger:checked ~ .menu-lines .span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu .menu-faketrigger:checked ~ .menu-lines .span:nth-child(3) {
-    transform-origin: 0% 100%;
-    transform: rotate(-45deg) scaleX(1);
-}
-
-.menu ul {
-    position: absolute;
-    z-index: 998;
-    left: 0;
-    top: 0;
-    width: 250px;
-    height: calc(100vh - 100px);
-    padding-top: 100px;
-    background-color: #ededed;
-    margin-left: -300px;
-    transition: all ease .2s; 
-}
-
-li {
-    padding: 10px 30px;
-}
-
-a {
-    text-decoration: none;
-} */
-/* .grid__basico {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(1fr));
-    grid-template-rows: repeat(auto-fit, minmax(1fr)); 
-    grid-template-areas: 
-    'a b c d'
-    'e f g h'
-    'i j k l'    ;
-    
-}
-
-.img__header {
-    grid-area: a;
-}
-
-
-
-.grid__nav {
-    display: grid;
-    gap: 1rem;
-    grid-template-rows: repeat (3, 1fr); 
-    grid-template-columns: repeat(auto-fit, minmax(1fr));
-    
-}
-
-.flex__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.menu {
-    grid-area: b, c, d;
-    display: flex;
-    flex-direction: row;
-}
-
-#checkbox {
-    display: none;
-} */
-
 a {
     color: black;
     text-decoration: none;
@@ -160,7 +39,22 @@ a:hover {
     display: none;
 }
 
-@media (max-width: 1400px) {
+#menu__feaures {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+#menu__features a {
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile__features {
+    display: none;
+}
+
+@media (max-width: 376px) {
     #menu   {
         display: block;
         /* display: block; */
@@ -225,4 +119,87 @@ a:hover {
         transform: rotate(-135deg);
         top: -7px;
     }
+
+    #menu__features {
+        display: block;
+        /* display: block; */
+        position: absolute;
+        width: 60%;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        height: calc(100vh - 70px);         
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;  
+    }
+    
+    #nav__features.active #menu__features {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu__features a {
+        padding: 1rem 0;
+        margin: 0 1rem;        
+    }
+    
+    #btn-mobile__features {
+        display: flex;
+        padding: .5rem 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+    }
+
+    #hamburger__features {
+        border-top: 2px solid;
+        width: 25px;
+    }
+
+    #menu__company {
+        display: block;
+        /* display: block; */
+        position: absolute;
+        width: 60%;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        height: calc(100vh - 70px);         
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;  
+    }
+    
+    #nav__company.active #menu__company {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu__company a {
+        padding: 1rem 0;
+        margin: 0 1rem;        
+    }
+    
+    #btn-mobile__company {
+        display: flex;
+        padding: .5rem 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+    }
+
+    #hamburger__company {
+        border-top: 2px solid;
+        width: 25px;
+    }
+
 }
