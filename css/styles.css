@@ -7,72 +7,76 @@
     --Epilogue: 'Epilogue', sans-serif;
 }
 
-.flex__basico {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+
+@media screen and (max-width: 376px) {
+    .flex__basico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    
+    .flex__row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;        
+    }
+    
+    .div__imagem {
+        width: 100%;
+        height: auto;
+    }
+    
+    .imagem__hero {
+        width: 100%;
+        height: auto;
+    }
+    
+    .titulo {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        font-family: var(--Epilogue);
+        color: var(--Almost-Black);
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .texto {
+        display: flex;    
+        text-align: center;
+        font-family: var(--Epilogue);
+        color: var(--Medium-Gray);
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 1rem;
+        line-height: 1.5em;
+    }
+    
+    .botao__div {
+        background-color: var(--Almost-Black);
+        padding: 0.8rem 1.3rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    
+    .texto__botao {
+        color: var(--Almost-White);
+        font-family: var(--Epilogue);
+        font-size: 0.9rem;
+    }
+    
+    .link__clientes {
+        width: 100%;
+        height: auto;
+    }
+    
+    .imagem__footer {
+        width: 60px;
+        height: auto;
+        margin: 1rem;    
+    }
 }
 
-.flex__row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;        
-}
-
-.div__imagem {
-    width: 100%;
-    height: auto;
-}
-
-.imagem__hero {
-    width: 100%;
-    height: auto;
-}
-
-.titulo {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    font-family: var(--Epilogue);
-    color: var(--Almost-Black);
-    font-weight: 700;
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-.texto {
-    display: flex;    
-    text-align: center;
-    font-family: var(--Epilogue);
-    color: var(--Medium-Gray);
-    font-weight: 400;
-    font-size: 1rem;
-    padding: 1rem;
-    line-height: 1.5em;
-}
-
-.botao__div {
-    background-color: var(--Almost-Black);
-    padding: 0.8rem 1.3rem;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-}
-
-.texto__botao {
-    color: var(--Almost-White);
-    font-family: var(--Epilogue);
-    font-size: 0.9rem;
-}
-
-.link__clientes {
-    width: 100%;
-    height: auto;
-}
-
-.imagem__footer {
-    width: 60px;
-    height: auto;
-    margin: 1rem;    
-}
 
