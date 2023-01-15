@@ -18,10 +18,10 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
 
-  <body class="" id="page">
-    <header id="header">
-      <a id="logo" clas="" href=""><img src="images/logo.svg" alt="" /></a>
-      <nav id="nav">
+  <body>
+    <header class="header">
+      <a class="logo" href=""><img src="images/logo.svg" alt="" /></a>
+      <nav id="nav" class="nav">
         <button id="btn-mobile">
           <span id="hamburger"></span>
         </button>
@@ -32,10 +32,18 @@
               <button id="btn-mobile__features">Features</button>
               <span id="hamburger__features"></span>
               <ul id="menu__features" class="menu__features">
-                <li class="linha__todo"><a href="">Todo List</a></li>
-                <li class="linha__calendar"><a href="">Calendar</a></li>
-                <li class="linha__reminders"><a href="">Reminders</a></li>
-                <li class="linha__planning"><a href="">Planning</a></li>
+                <li class="linha__todo">
+                  <a class="texto__linha" href="">Todo List</a>
+                </li>
+                <li class="linha__calendar">
+                  <a class="texto__linha" href="">Calendar</a>
+                </li>
+                <li class="linha__reminders">
+                  <a class="texto__linha" href="">Reminders</a>
+                </li>
+                <li class="linha__planning">
+                  <a class="texto__linha" href="">Planning</a>
+                </li>
               </ul>
             </nav>
           </li>
@@ -44,32 +52,32 @@
               <button id="btn-mobile__company">Company</button>
               <span id="hamburger__company"></span>
               <ul id="menu__company" class="menu__company">
-                <li><a href="">History</a></li>
-                <li><a href="">Our Team</a></li>
-                <li><a href="">Blog</a></li>
+                <li><a href="" class="texto__linha">History</a></li>
+                <li><a href="" class="texto__linha">Our Team</a></li>
+                <li><a href="" class="texto__linha">Blog</a></li>
               </ul>
             </nav>
           </li>
-          <li><a href="">Carrers</a></li>
-          <li><a href="">About</a></li> 
+          <li><a class="carrers" href="">Carrers</a></li>
+          <li><a class="about" href="">About</a></li>
           <div class="botoes__entrada">
-            <a href="">Login</a>
-            <a id="register" class="register" href="">Register</a>
-          </div>         
-        </ul>        
+            <a class="login" href="">Login</a>
+            <a class="register" href="">Register</a>
+          </div>
+        </ul>
       </nav>
-      
     </header>
 
     <main>
-      <section class="flex__basico">
+      <section class="flex__basico flex__row">
         <div class="div__imagem">
           <figure>
             <img
-              class="imagem__hero"
+              class="imagem__mobile"
               src="images/image-hero-mobile.png"
               alt="Pessoa Segurando um notebook aberto"
             />
+            <img class="imagem__desktop"  src="images/image-hero-desktop.png" alt="Pessoa Segurando um notebook aberto" />
           </figure>
         </div>
 
@@ -87,7 +95,7 @@
     </main>
 
     <footer class="footer">
-      <div class="flex__row">
+      <div class="flex__desktop__footer">
         <a href="#" class="link__clientes"
           ><img class="imagem__footer" src="images/client-databiz.svg" alt=""
         /></a>

@@ -1,82 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 
 :root {
-    --Almost-White: hsl(0, 0%, 99%);
-    --Medium-Gray: hsl(0, 0%, 41%);
-    --Almost-Black: hsl(0, 0%, 8%);
-    --Epilogue: 'Epilogue', sans-serif;
+  --Almost-White: hsl(0, 0%, 99%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+  --Epilogue: "Epilogue", sans-serif;
 }
 
-
-@media screen and (max-width: 480px) {
-    .flex__basico {
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
-    }
-    
-    .flex__row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;        
-    }
-    
-    .div__imagem {
-        width: 100%;
-        height: auto;
-    }
-    
-    .imagem__hero {
-        width: 100%;
-        height: auto;
-    }
-    
-    .titulo {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        font-family: var(--Epilogue);
-        color: var(--Almost-Black);
-        font-weight: 700;
-        font-size: 2rem;
-        margin-top: 1rem;
-    }
-    
-    .texto {
-        display: flex;    
-        text-align: center;
-        font-family: var(--Epilogue);
-        color: var(--Medium-Gray);
-        font-weight: 400;
-        font-size: 1rem;
-        padding: 1rem;
-        line-height: 1.5em;
-    }
-    
-    .botao__div {
-        background-color: var(--Almost-Black);
-        padding: 0.8rem 1.3rem;
-        border-radius: 10px;
-        margin-bottom: 2rem;
-    }
-    
-    .texto__botao {
-        color: var(--Almost-White);
-        font-family: var(--Epilogue);
-        font-size: 0.9rem;
-    }
-    
-    .link__clientes {
-        width: 100%;
-        height: auto;
-    }
-    
-    .imagem__footer {
-        width: 60px;
-        height: auto;
-        margin: 1rem;    
-    }
+.flex__basico {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
 
+.flex__row {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.flex__desktop__footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div__imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;  
+  width: 100%;
+  height: auto;
+  padding: 2rem 5rem 3rem 5rem;
+}
+
+.imagem__desktop {
+  width: 400px;
+  height: auto;
+}
+
+.imagem__mobile {
+    display: none;
+}
+
+.div__card {
+  display: flex;
+  padding: 4rem;
+}
+
+.titulo {
+  display: flex;
+  font-family: var(--Epilogue);
+  color: var(--Almost-Black);
+  font-weight: 700;
+  font-size: 4.5rem;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.texto {
+  display: flex;
+  font-family: var(--Epilogue);
+  color: var(--Medium-Gray);
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0rem 0rem 2rem 0rem;
+  line-height: 1.5em;
+}
+
+.botao__div {
+  display: flex;
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+  padding: 0.8rem 1.3rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex__basico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div__imagem {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .imagem__desktop {
+    display: none;
+  }
+
+  .imagem__mobile {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  
+
+  .div__card {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .titulo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: var(--Epilogue);
+    color: var(--Almost-Black);
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .texto {
+    display: flex;
+    text-align: center;
+    font-family: var(--Epilogue);
+    color: var(--Medium-Gray);
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+    line-height: 1.5em;
+  }
+
+  .botao__div {
+    background-color: var(--Almost-Black);
+    padding: 0.8rem 1.3rem;
+    border-radius: 10px;
+    margin: 0rem 0rem 1.5rem 0rem;
+  }
+
+  .texto__botao {
+    color: var(--Almost-White);
+    font-family: var(--Epilogue);
+    font-size: 0.9rem;
+  }
+
+  .link__clientes {
+    width: 100%;
+    height: auto;
+  }
+
+  .imagem__footer {
+    width: 60px;
+    height: auto;
+    margin: 1rem;
+  }
+}
