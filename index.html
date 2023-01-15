@@ -20,22 +20,22 @@
 
   <body class="" id="page">
     <header id="header">
-      <a id="logo" clas="" href=""><img src="images/logo.svg" alt=""></a>
+      <a id="logo" clas="" href=""><img src="images/logo.svg" alt="" /></a>
       <nav id="nav">
         <button id="btn-mobile">
           <span id="hamburger"></span>
         </button>
 
-        <ul id="menu">
+        <ul id="menu" class="menu">
           <li>
             <nav id="nav__features">
               <button id="btn-mobile__features">Features</button>
               <span id="hamburger__features"></span>
-              <ul id="menu__features">
-                <li><a href="">Todo List</a></li>
-                <li><a href="">Calendar</a></li>
-                <li><a href="">Reminders</a></li>
-                <li><a href="">Planning</a></li>
+              <ul id="menu__features" class="menu__features">
+                <li class="linha__todo"><a href="">Todo List</a></li>
+                <li class="linha__calendar"><a href="">Calendar</a></li>
+                <li class="linha__reminders"><a href="">Reminders</a></li>
+                <li class="linha__planning"><a href="">Planning</a></li>
               </ul>
             </nav>
           </li>
@@ -43,30 +43,30 @@
             <nav id="nav__company">
               <button id="btn-mobile__company">Company</button>
               <span id="hamburger__company"></span>
-              <ul id="menu__company">
+              <ul id="menu__company" class="menu__company">
                 <li><a href="">History</a></li>
                 <li><a href="">Our Team</a></li>
                 <li><a href="">Blog</a></li>
               </ul>
             </nav>
           </li>
-          <nav>
-            <li><a href="">Carrers</a></li>
-            <li><a href="">About</a></li>
-            <div>
-              <a href="">Login</a>
-              <a href="">Register</a>
-            </div>
-          </nav>
-        </ul>
+          <li><a href="">Carrers</a></li>
+          <li><a href="">About</a></li> 
+          <div class="botoes__entrada">
+            <a href="">Login</a>
+            <a id="register" class="register" href="">Register</a>
+          </div>         
+        </ul>        
       </nav>
+      
     </header>
 
     <main>
       <section class="flex__basico">
         <div class="div__imagem">
           <figure>
-            <img class="imagem__hero"
+            <img
+              class="imagem__hero"
               src="images/image-hero-mobile.png"
               alt="Pessoa Segurando um notebook aberto"
             />
@@ -79,19 +79,32 @@
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <a class="botao__div" href="#"><p class="texto__botao">Learn More</p></a>
+          <a class="botao__div" href="#"
+            ><p class="texto__botao">Learn More</p></a
+          >
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="flex__row">
-        <a href="#" class="link__clientes"><img class="imagem__footer" src="images/client-databiz.svg" alt="" /></a>
-        <a href="#" class="link__clientes"><img class="imagem__footer" src="images/client-audiophile.svg" alt="" /></a>
-        <a href="#" class="link__clientes"><img class="imagem__footer" src="images/client-meet.svg" alt="" /></a>
-        <a href="#" class="link__clientes"><img class="imagem__footer" src="images/client-maker.svg" alt="" /></a>
+        <a href="#" class="link__clientes"
+          ><img class="imagem__footer" src="images/client-databiz.svg" alt=""
+        /></a>
+        <a href="#" class="link__clientes"
+          ><img
+            class="imagem__footer"
+            src="images/client-audiophile.svg"
+            alt=""
+        /></a>
+        <a href="#" class="link__clientes"
+          ><img class="imagem__footer" src="images/client-meet.svg" alt=""
+        /></a>
+        <a href="#" class="link__clientes"
+          ><img class="imagem__footer" src="images/client-maker.svg" alt=""
+        /></a>
       </div>
-    </footer>    
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

@@ -26,3 +26,5 @@ function toogleMenu__company () {
 }
 
 btnMobile__company.addEventListener('click', toogleMenu__company);
+
+

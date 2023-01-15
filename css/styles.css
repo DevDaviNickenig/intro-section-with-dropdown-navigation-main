@@ -8,7 +8,7 @@
 }
 
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 480px) {
     .flex__basico {
         display: flex;
         flex-direction: column;
